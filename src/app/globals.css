@@ -236,7 +236,7 @@ body {
 
 @layer utilities {
   h1 {
-    @apply font-medium text-[60px] manrope;
+    @apply font-medium text-[60px];
   }
   h2 {
     @apply font-medium text-[46px];
