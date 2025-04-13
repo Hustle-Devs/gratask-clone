@@ -10,7 +10,7 @@ export default function Home() {
         <div className="mx-auto px-4 md:px-6 container">
           <div className="flex flex-col items-center space-y-4 text-center">
             <div className="space-y-2">
-              <h1 className="text-primary-700 heading-style">
+              <h1 className="text-primary-700 text-weif manrope heading-style">
                 Welcome to HustleArticles
               </h1>
               <p className="mx-auto max-w-[700px] text-primary dark:text-white md:text-xl">

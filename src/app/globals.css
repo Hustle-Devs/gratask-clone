@@ -1,4 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 @import "tailwindcss";
+
+.manrope {
+  font-family: "Manrope", sans-serif;
+}
 
 @custom-variant dark (&:is(.dark *));
 
@@ -127,7 +132,6 @@
   --accent-foreground: hsl(0, 20.5%, 20.5%);
   --destructive: hsl(0, 57.7%, 24.5%);
   --border: hsl(0, 92.2%, 92.2%);
-
   --input: hsl(0, 92.2%, 92.2%);
   --ring: hsl(0, 70.8%, 70.8%);
   --chart-1: hsl(0, 64.6%, 22.2%);
@@ -186,7 +190,6 @@
   --accent-800: hsl(240, 100%, 30%);
   --accent-900: hsl(240, 100%, 20%);
   --accent-950: hsl(240, 100%, 15%);
-
   --primary-foreground: hsl(0, 20.5%, 20.5%);
   --secondary: hsl(298, 70%, 66%);
   --secondary-foreground: hsl(0, 98.5%, 98.5%);
@@ -196,7 +199,6 @@
   --accent-foreground: hsl(0, 98.5%, 98.5%);
   --destructive: hsl(0, 70.4%, 19.1%);
   --border: hsl(298, 100%, 76%);
-
   --input: hsl(0, 100%, 100%, 15%);
   --ring: hsl(0, 55.6%, 55.6%);
   --chart-1: hsl(0, 48.8%, 24.3%);
@@ -213,6 +215,9 @@
   --sidebar-border: hsl(0, 100%, 100%, 10%);
   --sidebar-ring: hsl(0, 55.6%, 55.6%);
 }
+body {
+  font-family: var(--font-inter);
+}
 
 @layer base {
   * {
@@ -224,23 +229,31 @@
 }
 
 @layer components {
-  .heading-style {
-    @apply text-3xl font-bold dark:text-red-600 tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none;
-  }
-
-  .featured-title {
-    @apply mb-8 font-bold text-3xl sm:text-4xl md:text-5xl tracking-tighter;
-  }
   .container {
-    @apply mx-auto px-[20px] lg:px-0 w-full md:w-[768px] lg:w-[1280px];
+    @apply mx-auto px-[10px] lg:px-0 w-full md:w-[768px] lg:w-[1220px];
   }
 }
 
 @layer utilities {
   h1 {
-    @apply text-[60px];
+    @apply font-medium text-[60px] manrope;
   }
   h2 {
-    @apply text-[46px];
+    @apply font-medium text-[46px];
+  }
+  h3 {
+    @apply font-medium text-[38px];
+  }
+  h4 {
+    @apply font-medium text-[20px];
+  }
+  h5 {
+    @apply font-medium text-[18px];
+  }
+  h5 {
+    @apply font-normal text-[16px];
+  }
+  p {
+    @apply font-normal text-[14px];
   }
 }
