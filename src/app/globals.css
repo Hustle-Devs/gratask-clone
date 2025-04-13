@@ -238,6 +238,9 @@
 
 @layer utilities {
   h1 {
-    @apply text-5xl;
+    @apply text-[60px];
+  }
+  h2 {
+    @apply text-[46px];
   }
 }
