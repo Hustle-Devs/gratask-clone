@@ -89,7 +89,7 @@ import { IoTrophy } from "react-icons/io5";
 
 export default function Hero() {
   return (
-    <div>
+    <div >
       <div className="flex items-center container">
         {/* Left Side */}
         <div className="flex flex-col justify-center space-y-6 pt-[150px] pb-[65px] w-1/2">
@@ -118,25 +118,32 @@ export default function Hero() {
             Sign up for a free trial today and experience the difference. Our
             intuitive interface, powerful features, and dedicated.
           </h5>
-
-          {/* <button className="bg-purple-700 hover:bg-purple-800 px-6 py-3 rounded-full w-max font-medium text-white">
-            Start 14 Days Free Trial
-          </button> */}
           <div className="w-1/5">
-          <Button variant={"default"}>Start 14 Days Free Trial</Button>
+            <Button variant={"default"}>Start 14 Days Free Trial</Button>
           </div>
         </div>
 
         {/* Right Side - Images */}
-        {/* <div className="flex md:flex-row flex-col gap-4 md:gap-6">
-          <div className="rounded-2xl w-full md:w-1/2 overflow-hidden">
-            <Image src="/hero-image/collections.png" alt="Collections Preview" width={600} height={400} className="rounded-2xl w-full h-auto" />
-          </div>
-          <div className="rounded-2xl w-full md:w-1/2 overflow-hidden">
-            <Image src="/hero-image/dashboard-desktop.png" alt="Dashboard Preview" width={600} height={400} className="rounded-2xl w-full h-auto" />
-          </div>
- 
+
+        {/* <div className="w-full md:w-1/2 overflow-hidden">
+          <Image
+            src="/hero-image/right-image.png"
+            alt="Collections Preview"
+            width={600}
+            height={400}
+            className="w-full h-auto"
+          />
         </div> */}
+
+      <div className="flex justify-end pr-4 w-1/2">
+        <Image
+          src="/hero-image/right-image.png"
+          alt="Collections Preview"
+          width={600}
+          height={400}
+          className="h-auto"
+        />
+      </div>
       </div>
     </div>
   );
