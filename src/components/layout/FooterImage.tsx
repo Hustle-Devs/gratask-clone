@@ -4,14 +4,14 @@ import footer from "@/image/footer.png";
 
 export default function Footer() {
   return (
-    <div className="bg-[#19171E] mt-[-80px] lg:mt-[-300px] lg:mr-0">
+    <div className="bg-[#19171E] mx-auto mt-[-80px] lg:mt-[-300px] lg:h-[352px]">
       {/* Footer Image Start */}
       <Image
         src={footer}
         alt={"footer"}
         width={1570}
-        height={330}
-        className="lg:ml-[335px]"
+        height={296}
+        className="lg:ml-[185px]"
       />
       {/* Footer Image End */}
     </div>
