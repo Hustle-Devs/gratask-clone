@@ -1,18 +1,19 @@
 import type { Metadata } from "next";
-import { Inter, Geist_Mono, Geist } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { ThemeProvider } from "@/components/theme-provider";
+import localFont from "next/font/local";
 
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
+const inter = localFont({
+  src: "../fonts/InterFont.ttf",
+  Weight: "400, 500, 600, 700, 800",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const manrope = localFont({
+  src: "../fonts/ManropeFont.ttf",
+  Weight: "400, 500, 600, 700, 800",
+  variable: "--font-manrope",
 });
 
 export const metadata: Metadata = {
@@ -27,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${inter.className} ${manrope.variable} antialiased`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
