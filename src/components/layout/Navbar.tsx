@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function Navbar() {
   return (
-    <div className="flex flex-row justify-between items-center bg-gray-800 mt-[40px] p-[17px] rounded-full lg:h-[84px] container">
+    <div className="flex flex-row lg:justify-between items-center bg-gray-800 mx-auto mt-[40px] p-[17px] rounded-full w-[390px] md:w-[768px] lg:w-[1224px] lg:h-[84px]">
       <Link href={"/"}>
         <Image
           src={logo}
@@ -26,6 +26,9 @@ export default function Navbar() {
           Get Started Now <ArrowRight />
         </button>
       </nav>
+      <button className="lg:hidden flex justify-around items-center bg-accent mx-auto mr-0 rounded-full w-[207px] h-[48px]">
+        Get Started Now <ArrowRight />
+      </button>
     </div>
   );
 }

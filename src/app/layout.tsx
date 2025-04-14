@@ -4,6 +4,8 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { ThemeProvider } from "@/components/theme-provider";
 import localFont from "next/font/local";
+import FooterImage from "@/components/layout/FooterImage";
+import TasksToday from "@/components/layout/TasksToday";
 
 const inter = localFont({
   src: "../fonts/InterFont.ttf",
@@ -37,7 +39,10 @@ export default function RootLayout({
         >
           <Navbar />
           {children}
+          <TasksToday />
+
           <Footer />
+          <FooterImage />
         </ThemeProvider>
       </body>
     </html>
