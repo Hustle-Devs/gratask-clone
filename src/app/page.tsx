@@ -1,3 +1,9 @@
+import Testimonials from "@/components/testimonials/testimonials";
+
 export default function Home() {
-  return <div>hi</div>;
+  return (
+    <div>
+      <Testimonials />
+    </div>
+  );
 }
