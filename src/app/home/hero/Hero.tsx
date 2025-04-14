@@ -7,7 +7,7 @@ import rightImage from "@/assets/hero-image/right-image.png";
 export default function Hero() {
   return (
     <div className="px-4 md:px-0">
-      <div className="flex md:flex-row flex-col items-center mx-auto container">
+      <div className="flex md:flex-row flex-col items-center mx-auto max-w-custom">
         {/* Left Side */}
         <div className="flex flex-col justify-center space-y-6 pt-20 pb-10 w-full md:w-1/2 md:text-left text-center">
           <div className="inline-flex justify-center md:justify-start items-center dark:bg-gray-700 mx-auto md:mx-0 px-3 py-1 border border-gray-600 rounded-full w-fit text-foreground dark:text-primary text-sm">
