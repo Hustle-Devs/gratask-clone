@@ -1,12 +1,13 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import Hero from "./home/hero/Hero";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center">
+    <div className="">
       {/* Hero Section */}
-      <section className="bg-background py-12 md:py-24 lg:py-32 xl:py-48 w-full">
+      {/* <section className="bg-background py-12 md:py-24 lg:py-32 xl:py-48 w-full">
         <div className="mx-auto px-4 md:px-6 container">
           <div className="flex flex-col items-center space-y-4 text-center">
             <div className="space-y-2">
@@ -28,7 +29,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+      <Hero />
 
       {/* Featured Posts */}
       <section className="bg-muted/50 py-12 md:py-24 lg:py-32 w-full">
