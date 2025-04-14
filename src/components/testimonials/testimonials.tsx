@@ -7,7 +7,7 @@ import Link from "next/link";
 import Image from "next/image";
 import article from "@/image/article.png";
 
-export default function Testimonials() {
+export default function testimonials() {
   useEffect(() => {
     const slider = new Glide(".glide-02", {
       type: "slider",
