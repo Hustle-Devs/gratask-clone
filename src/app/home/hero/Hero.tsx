@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
 import { IoTrophy } from "react-icons/io5";
+import rightImage from "@/assets/hero-image/right-image.png";
 
 export default function Hero() {
   return (
@@ -47,11 +48,11 @@ export default function Hero() {
         {/* Right Side */}
         <div className="flex justify-center md:justify-end mt-10 md:mt-0 w-full md:w-1/2">
           <Image
-            src="/hero-image/right-image.png"
+            src={rightImage}
             alt="Collections Preview"
-            width={600}
-            height={400}
-            className="w-full max-w-[500px] h-auto"
+            width={800}
+            height={500}
+            className="w-full max-w-[700px] md:max-w-[800px] h-auto"
           />
         </div>
       </div>
