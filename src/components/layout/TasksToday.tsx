@@ -6,7 +6,7 @@ export default function HeroSection() {
   return (
     <section className="relative bg-[#0D0C12] mx-auto lg:mt-[300px] mb-[-80px] lg:mb-[-170px] px-[10px] border-1 border-white rounded-[24px] w-[370px] md:w-[768px] lg:w-[1224px] lg:h-[435]">
       {/* Background Gradiant */}
-      <div className="hidden lg:top-[70px] lg:right-[70px] absolute lg:flex bg-[#E26EE5] opacity-60 blur-3xl rounded-l-full w-[770px] h-[280px]"></div>
+      <div className="lg:top-[70px] bottom-0 left-[50px] lg:left-[500px] absolute lg:flex bg-[#E26EE5] opacity-60 blur-3xl rounded-l-full w-[250px] lg:w-[650px] h-[600px] lg:h-[280px] 00px]"></div>
 
       <div className="flex lg:flex-row flex-col justify-between items-center mx-auto max-w-full">
         {/* Left: Text */}
