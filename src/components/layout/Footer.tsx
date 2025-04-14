@@ -25,9 +25,9 @@ export default function Footer() {
                 height={40}
               />
             </Link>
-            <h5 className="lg:w-[248px] lg:text-left text-center leading-[27px]">
+            <h6 className="lg:w-[248px] lg:text-left text-center leading-[27px]">
               Sign up for a free trial today and experience the difference.
-            </h5>
+            </h6>
 
             {/* Icons */}
             <div className="flex flex-row justify-center lg:justify-around gap-[20px] lg:mt-[48px] mb-[50px] lg:mb-0 size-[14px]">
