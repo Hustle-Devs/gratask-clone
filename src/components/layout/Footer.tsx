@@ -11,7 +11,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className="bg-[#19171E] border-primary-700 border-t-4 w-full">
+    <div className="bg-[#19171E] mb-[50px] border-primary-700 border-t-4 w-full">
       <div className="mx-auto py-[100px] lg:py-[332px] w-[390px] md:w-[768px] lg:w-[1224px]">
         <div className="flex lg:flex-row flex-col lg:justify-start items-center lg:items-start lg:gap-[217px] lg:mr-[218px] lg:w-[1224px]">
           {/* Left Start */}

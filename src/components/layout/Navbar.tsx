@@ -6,7 +6,7 @@ import { FaAngleDown } from "react-icons/fa6";
 
 export default function Navbar() {
   return (
-    <div className="flex flex-row justify-between items-center bg-[#19171E] mx-auto mt-[40px] p-[17px] rounded-full w-[380px] md:w-[768px] lg:w-[1224px] lg:h-[84px]">
+    <div className="flex flex-row justify-between items-center bg-[#19171E] mx-auto mt-[40px] mb-[50px] p-[17px] rounded-full w-[380px] md:w-[768px] lg:w-[1224px] lg:h-[84px]">
       <div>
         <Link href={"/"}>
           <Image
