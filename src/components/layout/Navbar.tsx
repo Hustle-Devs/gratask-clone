@@ -35,17 +35,15 @@ export default function Navbar() {
 
   const { theme, setTheme } = useTheme();
 
-  console.log(theme);
-
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <nav className="max-w-custom mx-auto flex h-16 items-center">
+    <header className="top-0 z-50 sticky bg-background/95 supports-[backdrop-filter]:bg-background/60 backdrop-blur border-b w-full">
+      <nav className="flex items-center mx-auto max-w-custom h-16">
         <div className="mr-8">
-          <Link href={"/"} className="text-2xl font-bold">
+          <Link href={"/"} className="font-bold text-2xl">
             Hustle Articles
           </Link>
         </div>
-        <div className="flex flex-1 items-center justify-between">
+        <div className="flex flex-1 justify-between items-center">
           <div className="flex items-center space-x-6">
             {navigation.map((item) => (
               <Link
@@ -68,8 +66,8 @@ export default function Navbar() {
           size="icon"
           onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
         >
-          <SunIcon className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-          <MoonIcon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+          <SunIcon className="w-5 h-5 rotate-0 dark:-rotate-90 scale-100 dark:scale-0 transition-all" />
+          <MoonIcon className="absolute w-5 h-5 rotate-90 dark:rotate-0 scale-0 dark:scale-100 transition-all" />
           <span className="sr-only">Toggle theme</span>
         </Button>
       </nav>
