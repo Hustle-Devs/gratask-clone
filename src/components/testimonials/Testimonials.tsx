@@ -10,7 +10,7 @@ import profile1 from "@/image/profile1.png";
 import profile2 from "@/image/profile2.png";
 import notion from "@/image/notion.png";
 
-export default function testimonials() {
+export default function Testimonials() {
   useEffect(() => {
     const slider = new Glide(".glide-02", {
       type: "slider",
