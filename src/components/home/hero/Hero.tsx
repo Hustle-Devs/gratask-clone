@@ -3,6 +3,7 @@ import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
 import { IoTrophy } from "react-icons/io5";
 import rightImage from "@/assets/hero-image/right-image.png";
+import arrow from "@/assets/hero-image/arrow.png";
 
 export default function Hero() {
   return (
@@ -27,9 +28,16 @@ export default function Hero() {
               <br />
               <span className="inline-flex justify-center md:justify-start items-center gap-2">
                 <span>with</span>
-                <span className="bg-primary-600 dark:bg-secondary p-2 rounded-full">
+                {/* <span className="bg-primary-600 dark:bg-secondary p-2 rounded-full">
                   <FaArrowRight className="text-white" />
-                </span>
+                </span> */}
+                <Image
+                  src={arrow}
+                  alt="Collections Preview"
+                  width={800}
+                  height={500}
+                  className="w-full max-w-[700px] md:max-w-[800px] h-auto"
+                />
                 <span>GTX</span>
               </span>
             </h1>
