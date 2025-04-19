@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
+import Navbar from "@/components/layout/Header/Navbar";
+import Footer from "@/components/layout/Footer/Footer";
 import { ThemeProvider } from "@/components/theme-provider";
 import localFont from "next/font/local";
-import FooterImage from "@/components/layout/FooterImage";
+import FooterImage from "@/components/layout/Footer/FooterImage";
 import TasksToday from "@/components/layout/TasksToday";
 
 const inter = localFont({
