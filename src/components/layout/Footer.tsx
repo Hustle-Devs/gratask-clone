@@ -15,7 +15,7 @@ export default function Footer() {
       <div className="mx-auto py-[100px] lg:py-[332px] w-[390px] md:w-[768px] lg:w-[1224px]">
         <div className="flex lg:flex-row flex-col lg:justify-start items-center lg:items-start lg:gap-[217px] lg:mr-[218px] lg:w-[1224px]">
           {/* Left Start */}
-          <div className="flex flex-col justify-between items-center lg:items-start gap-[12px] w-[247px]">
+          <div className="flex flex-col justify-between items-center lg:items-start gap-[12px] w-[247px] text-white">
             {/* logo */}
             <Link href={""}>
               <Image
@@ -47,7 +47,7 @@ export default function Footer() {
           </div>
           {/* Left End */}
           {/* Right Start */}
-          <div className="flex lg:flex-row flex-col gap-[50px] lg:gap-[80px]">
+          <div className="flex lg:flex-row flex-col gap-[50px] lg:gap-[80px] text-white">
             {/* Features & Integrations Start */}
             <div className="flex flex-row gap-[100px] lg:gap-[115px]">
               {/* Features */}
