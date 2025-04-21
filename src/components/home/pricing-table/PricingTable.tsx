@@ -1,5 +1,8 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
+
+import pricingicon from "@/image/pricingicon.png";
 
 const PricingPlan = () => {
   // State to track which billing period is selected (quarterly or yearly)
@@ -16,7 +19,7 @@ const PricingPlan = () => {
         "Basic Reporting",
         "Collaboration with 2 members",
       ],
-      buttonStyle: "border border-purple-400 bg-transparent text-white",
+      buttonStyle: "border border-[#B683F9] bg-[#19171E] dark:text-white",
     },
     {
       name: "Business",
@@ -27,7 +30,7 @@ const PricingPlan = () => {
         "Customizable dashboards",
         "Collaboration with unlimited member",
       ],
-      buttonStyle: "bg-purple-600 text-white",
+      buttonStyle: " bg-[#613FE7] dark:text-white",
     },
     {
       name: "Select Plan",
@@ -38,39 +41,40 @@ const PricingPlan = () => {
         "Priority consideration",
         "Collaboration with 50 members",
       ],
-      buttonStyle: "border border-purple-400 bg-transparent text-white",
+      buttonStyle: "border border-[#B683F9] bg-[#19171E] dark:text-white",
     },
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center mx-auto px-4 py-8 sm:py-12 lg:py-16 max-w-7xl">
+    <div className="flex flex-col justify-center items-center mx-auto mt-[165px] mb-[50px] w-[380px] md:w-[768px] lg:w-[1224px]">
       {/* Top badge - Responsive sizing */}
-      <div className="bg-black mb-3 sm:mb-4 px-3 sm:px-4 py-1 sm:py-2 rounded-full text-white text-sm sm:text-base">
-        <span className="flex items-center">💎 Pricing Plan</span>
+      <div className="flex justify-center items-center bg-[#19171E] mb-[23px] border-1 border-white/20 rounded-full w-[148px] h-[40px] text-[16px] text-white text-center">
+        <h6>🔖 Pricing Plan </h6>
       </div>
 
       {/* Main heading - Responsive font size */}
-      <h2 className="mb-8 sm:mb-10 lg:mb-12 font-bold text-purple-500 text-2xl sm:text-3xl lg:text-4xl text-center">
-        Pricing Plan
-      </h2>
+      <h3 className="mb-[47px] w-[380px] lg:w-[650px] text-[20px] lg:text-[45px] text-center">
+        Premium <span className="text-primary-700">Pricing Plan</span>{" "}
+        Innovator's Choice Packages{" "}
+      </h3>
 
       {/* Billing period toggle - Responsive sizing */}
-      <div className="inline-flex bg-purple-100 mb-8 sm:mb-10 lg:mb-12 p-1 rounded-full w-full max-w-xs sm:max-w-md">
+      <div className="inline-flex items-center bg-black dark:bg-gradient-to-r dark:from-[#613FE7] dark:to-[#613FE70] mb-[35px] p-1 px-[8px] border-[#A076F9]/50 border-1 rounded-full w-[240px] h-[70px]">
         <button
-          className={`flex-1 text-center px-4 sm:px-8 py-2 sm:py-3 rounded-full text-sm sm:text-base transition-all duration-200 ${
+          className={`flex-1 w-[120px] h-[53px] text-center  rounded-full text-[16px] p-4  transition-all duration-200 ${
             billingPeriod === "quarterly"
-              ? "bg-purple-600 text-white"
-              : "bg-transparent text-gray-600 hover:bg-purple-50"
+              ? "bg-white dark:bg-[#613FE7] dark:text-white"
+              : "bg-transparent text-white "
           }`}
           onClick={() => setBillingPeriod("quarterly")}
         >
           Quarterly
         </button>
         <button
-          className={`flex-1 text-center px-4 sm:px-8 py-2 sm:py-3 rounded-full text-sm sm:text-base transition-all duration-200 ${
+          className={`flex-1 w-[120px] h-[53px] text-center  rounded-full text-[16px] p-4  transition-all duration-200 ${
             billingPeriod === "yearly"
-              ? "bg-purple-600 text-white"
-              : "bg-transparent text-gray-600 hover:bg-purple-50"
+              ? "bg-white dark:bg-[#613FE7] dark:text-white"
+              : "bg-transparent text-white"
           }`}
           onClick={() => setBillingPeriod("yearly")}
         >
@@ -79,66 +83,72 @@ const PricingPlan = () => {
       </div>
 
       {/* Pricing cards container - Responsive grid layout */}
-      <div className="gap-4 sm:gap-5 lg:gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full">
+      <div className="flex lg:flex-row flex-col flex-wrap justify-around items-center gap-[24px] mx-auto w-[380px] lg:w-[1224px]">
         {/* Map through the plans array to generate pricing cards */}
         {plans.map((plan, index) => (
           <div
             key={index}
-            className={`bg-black text-white rounded-lg p-4 sm:p-5 lg:p-6 flex flex-col ${
+            className={`bg-[#0E0C12] dark:text-white rounded-[16px] px-[10px] py-[10px] lg:px-[30px] lg:py-[40px] flex flex-col w-[380px] lg:w-[551px] lg:h-[693px] border-1 border-white/7 ${
               // Special styling for the third card on medium screens
-              index === 2 ? "md:col-span-2 lg:col-span-1" : ""
+              index === 1 ? " bg-[#19171E]" : ""
             }`}
           >
             {/* Plan name */}
-            <div className="mb-3 sm:mb-4">
-              <h3 className="font-bold text-base sm:text-lg">{plan.name}</h3>
-            </div>
+
+            <h5 className="flex justify-center items-center bg-[#18171E] rounded-full w-[115px] h-[47px] text-white text-center">
+              {plan.name}
+            </h5>
 
             {/* Trial offer text - Responsive font size */}
-            <p className="mb-4 sm:mb-6 text-gray-400 text-xs sm:text-sm">
+            <h6 className="mt-[23px] mb-[36px] text-[#D5D4D6]">
               Sign up for a free trial today and experience the difference.
-            </p>
+            </h6>
 
             {/* Price display - Responsive font size */}
-            <div className="mb-1 sm:mb-2">
-              <span className="font-bold text-2xl sm:text-3xl lg:text-4xl">
-                {plan.price}
-              </span>
-              <span className="ml-1 text-gray-400 text-xs sm:text-sm">
-                /per month
-              </span>
-            </div>
+            <h3 className="text-[55px] text-white">
+              {plan.price}
+
+              <span className="text-[#D5D4D6] text-[16px]">/per month</span>
+            </h3>
 
             {/* Free trial info - Responsive font size */}
-            <p className="mb-4 sm:mb-6 text-gray-400 text-xs sm:text-sm">
+            <h6 className="mt-[4px] mb-[36px] text-white">
               For 14 days, no card required.
-            </p>
+            </h6>
 
             {/* Select plan button - Responsive padding */}
             <button
-              className={`py-2 sm:py-3 px-4 sm:px-6 rounded-full mb-6 sm:mb-8 text-sm sm:text-base transition-all duration-200 ${plan.buttonStyle} hover:opacity-90`}
+              className={`py-2 sm:py-3 px-4 sm:px-6 rounded-full mb-6 sm:mb-8 text-sm sm:text-base text-white ${plan.buttonStyle} `}
             >
               Select Plan
             </button>
 
+            <div className="ml-[-11px] lg:ml-[-30px] border-white/7 border-t-1 w-[380px] lg:w-[551px]"></div>
+
             {/* Features section */}
-            <div className="mt-auto">
-              <h4
-                className={`mb-3 sm:mb-4 font-medium text-sm sm:text-base ${
+            <div className="py-[26px]">
+              <h5
+                className={`mb-3 sm:mb-4 font-medium text-white  ${
                   index === 1 ? "text-left" : ""
                 }`}
               >
                 {index === 1 ? "Features Included:" : "Plan Features"}
-              </h4>
-              <ul className="space-y-2 sm:space-y-3">
+              </h5>
+              <ul className="space-y-[10px] lg:space-y-[12px] mt-[22px]">
                 {plan.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-center">
-                    {/* Feature icon (purple circle) - Responsive sizing */}
-                    <div className="flex flex-shrink-0 justify-center items-center bg-purple-600 mr-2 sm:mr-3 rounded-full w-5 sm:w-6 h-5 sm:h-6">
-                      <span className="text-xs">✓</span>
-                    </div>
+                    {/* Icon */}
+                    <Image
+                      src={pricingicon}
+                      alt="pricingicon"
+                      width={32}
+                      height={32}
+                      className="mr-[16px]"
+                    />
                     {/* Feature text - Responsive font size */}
-                    <span className="text-xs sm:text-sm">{feature}</span>
+                    <span className="text-white text-xs sm:text-sm">
+                      {feature}
+                    </span>
                   </li>
                 ))}
               </ul>
