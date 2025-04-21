@@ -1,9 +1,15 @@
-import Testimonials from "@/components/testimonials/Testimonials";
+import ClientLogo from "@/components/home/client-logo/ClientLogo";
+import Hero from "@/components/home/hero/Hero";
+import PricingPlan from "@/components/home/pricing-table/PricingTable";
+import WhyChooseUs from "@/components/home/why-choose-us/WhyChooseUs";
 
 export default function Home() {
   return (
-    <div>
-      <Testimonials />
+    <div className="">
+      <Hero />
+      <ClientLogo />
+      <WhyChooseUs />
+      <PricingPlan />
     </div>
   );
 }
