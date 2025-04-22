@@ -1,80 +1,4 @@
 
-// import Image from "next/image";
-// import taskImage from "@/assets/task-management/task.png";
-// import priorityImg from "@/assets/task-management/priority.png";
-// import successImg from "@/assets/task-management/success.png";
-
-// export default function TaskManagement() {
-//   return (
-//     <section className="bg-[#19171E] mx-auto p-16 rounded-3xl w-full max-w-custom text-white">
-//       <div className="flex md:flex-row flex-col items-center md:items-start gap-12 px-6">
-//         {/* Left Side: Centered Image */}
-//         <div className="flex justify-center md:items-center w-full md:w-1/2">
-//           <Image
-//             src={taskImage}
-//             alt="Task UI Preview"
-//             className="rounded-xl w-full max-w-[400px] h-[350px]"
-//           />
-//         </div>
-
-//         {/* Right Side: Text and Features */}
-//         <div className="space-y-6 w-full md:w-1/2">
-//           <h2 className="font-bold text-3xl md:text-4xl leading-snug">
-//             Discover the Power of <br />
-//             Gratask Task Management.
-//           </h2>
-//           <p className="text-gray-400 text-base md:text-lg">
-//             Gratask's user-friendly interface makes task management a breeze.
-//             Effortlessly organize your to-do lists, set priorities, and stay on
-//             top of your daily, weekly, and long-term goals.
-//           </p>
-
-//           <div className="space-y-4">
-//             <div className="flex items-start gap-3">
-//               <div className="mt-1 text-2xl">
-//                 <Image
-//                   className="flex items-center w-full"
-//                   height={24}
-//                   width={24}
-//                   src={priorityImg}
-//                 />
-//               </div>
-//               <div>
-//                 <h4 className="font-semibold text-white text-lg">
-//                   Organize Task With Priority
-//                 </h4>
-//                 <p className="text-gray-400 text-sm">
-//                   Unlock the full potential of efficient task management with
-//                   Gratask. Sign up for our free trial today and experience.
-//                 </p>
-//               </div>
-//             </div>
-
-//             <div className="flex items-start gap-3">
-//               <div className="mt-1 text-2xl">
-//                 <Image
-//                   className="flex items-center w-full"
-//                   src={successImg}
-//                   height={24}
-//                   width={24}
-//                 />
-//               </div>
-//               <div>
-//                 <h4 className="font-semibold text-white text-lg">
-//                   Manage Daily Meetings Successfully
-//                 </h4>
-//                 <p className="text-gray-400 text-sm">
-//                   Effortlessly organize your to-do lists. Gratask&apos;s
-//                   user-friendly interface makes task management a breeze.
-//                 </p>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
 
 
 import Image from "next/image";
@@ -82,7 +6,7 @@ import taskImage from "@/assets/task-management/task.png";
 import priorityImg from "@/assets/task-management/priority.png";
 import successImg from "@/assets/task-management/success.png";
 
-export default function TaskManagement() {
+export default function TaskManagementFirst() {
   return (
     <section className="bg-foreground dark:bg-gray-700 mx-auto p-16 rounded-3xl w-full max-w-custom text-white dark:text-primary">
       <div className="flex md:flex-row flex-col items-center md:items-start gap-12">
@@ -120,8 +44,8 @@ export default function TaskManagement() {
                 className="min-w-[32px]"
               />
               <div>
-                <h4 className="mb-1 font-semibold text-lg">
-                Prefer Kanban boards, list views.
+                <h4 className="mb-1 text-lg">
+                  Organize Task With Priority
                 </h4>
                 <p className="text-gray-400 text-sm">
                   Unlock the full potential of efficient task management with
@@ -140,8 +64,8 @@ export default function TaskManagement() {
                 className="min-w-[32px]"
               />
               <div>
-                <h4 className="mb-1 font-semibold text-lg">
-                Our user-friendly interface.
+                <h4 className="mb-1 text-lg">
+                  Manage Daily Meetings Successfully
                 </h4>
                 <p className="text-gray-400 text-sm">
                   Effortlessly organize your to-do lists. Gratask's user-friendly

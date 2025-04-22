@@ -41,8 +41,8 @@ export default function TaskManagementThird() {
                 className="min-w-[32px]"
               />
               <div>
-                <h4 className="mb-1 font-semibold text-lg">
-                  Organize Task With Priority
+                <h4 className="mb-1 text-lg">
+                Prefer Kanban boards, list views.
                 </h4>
                 <p className="text-gray-400 text-sm">
                   Unlock the full potential of efficient task management with
@@ -61,8 +61,8 @@ export default function TaskManagementThird() {
                 className="min-w-[32px]"
               />
               <div>
-                <h4 className="mb-1 font-semibold text-lg">
-                  Manage Daily Meetings Successfully
+                <h4 className="mb-1 text-lg">
+                Our user-friendly interface.
                 </h4>
                 <p className="text-gray-400 text-sm">
                   Effortlessly organize your to-do lists. Gratask's
