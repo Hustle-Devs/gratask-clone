@@ -5,6 +5,7 @@ import TaskManagementHome from "@/components/home/task-management/TaskManagement
 
 import WhyChooseUs from "@/components/home/why-choose-us/WhyChooseUs";
 import Testimonials from "@/components/home/testimonials/Testimonials";
+import Faq from "@/components/home/faq/Faq";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <TaskManagementHome />
       <PricingPlan />
       <Testimonials />
+      <Faq />
     </div>
   );
 }
