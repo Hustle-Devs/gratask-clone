@@ -8,13 +8,13 @@ export default function IntegrationsSection() {
     <section className="relative py-20 overflow-hidden text-center">
       <div className="relative mx-auto max-w-custom">
         {/* Left Image (slightly higher) */}
-        <div className="bottom-[60%] left-10 md:left-20 absolute">
+        <div className="hidden md:block bottom-[60%] left-10 md:left-20 absolute">
           <Image
             src={left}
             alt="Left Icon"
             width={100}
             height={100}
-            className="border border-purple-500 rounded-full"
+            className=""
           />
         </div>
 
@@ -34,13 +34,13 @@ export default function IntegrationsSection() {
         </div>
 
         {/* Right Image (slightly lower) */}
-        <div className="top-[30%] right-10 md:right-20 absolute">
+        <div className="hidden md:block top-[30%] right-10 md:right-20 absolute">
           <Image
             src={right}
             alt="Right Icon"
             width={100}
             height={100}
-            className="border border-purple-500 rounded-full"
+            className=""
           />
         </div>
       </div>
