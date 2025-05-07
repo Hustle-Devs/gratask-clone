@@ -4,7 +4,7 @@ import task2 from "@/image/task2.png";
 import task3 from "@/image/task3.png";
 export default function HeroSection() {
   return (
-    <section className="relative bg-[#0D0C12] mx-auto lg:mt-[300px] mb-[-80px] lg:mb-[-170px] border-1 border-white rounded-[24px] w-[370px] md:w-[768px] lg:w-[1224px] lg:h-[435]">
+    <section className="relative bg-[#0D0C12] mx-auto mb-[-80px] lg:mb-[-170px] border-1 border-white rounded-[24px] w-[370px] md:w-[768px] lg:w-[1224px] lg:h-[435]">
       {/* Background Gradiant */}
       <div className="lg:top-[70px] bottom-0 left-[50px] lg:left-[500px] absolute lg:flex bg-[#E26EE5] opacity-60 blur-3xl rounded-l-full w-[250px] lg:w-[650px] h-[600px] lg:h-[280px]"></div>
 

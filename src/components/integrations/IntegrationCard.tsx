@@ -16,22 +16,7 @@ export default function IntegrationCard({ name, logo, description }: Integration
       <button className="mt-6 py-3 border border-purple-500 rounded-full w-1/2 hover:text-white transition cursor-pointer">
         Try Connect
       </button>
- 
+
     </div>
-    // <div className="flex flex-col justify-between bg-[#15121F] shadow hover:shadow-lg p-6 border hover:border-purple-600 border-transparent rounded-xl text-white transition duration-300">
-    //   {/* Top: Logo + Name */}
-    //   <div className="flex items-center space-x-3 mb-4">
-    //     <Image src={logo} alt={name} width={32} height={32} />
-    //     <h3 className="font-semibold text-xl capitalize">{name}</h3>
-    //   </div>
-
-    //   {/* Middle: Description */}
-    //   <p className="mb-6 text-gray-400 text-sm">{description}</p>
-
-    //   {/* Bottom: Button */}
-    //   <button className="hover:bg-purple-600 mt-auto px-5 py-2 border border-purple-500 rounded-full text-white text-sm transition-all">
-    //     Try Connect
-    //   </button>
-    // </div>
   );
 }

@@ -35,13 +35,18 @@ const faqItems = [
   },
 ];
 
-export default function FAQ() {
+export default function FAQ({ integrations }) {
+  console.log(integrations);
   return (
     <section className="flex justify-center items-center px-6 py-16 min-h-screen">
-      <div className="gap-12 grid md:grid-cols-2 w-full max-w-custom">
+      <div
+        className={`w-full ${
+          integrations ? "max-w-3xl" : "max-w-custom md:grid-cols-2"
+        } grid gap-6 ${integrations ? "grid-cols-1" : "md:grid-cols-2"}`}
+      >
         {/* Left Content */}
-        <div className="space-y-6">
-          <button className="flex items-center space-x-2 dark:bg-gray-700 px-4 py-1.5 border border-gray-600 rounded-full text-foreground dark:text-primary text-sm">
+        <div className={`space-y-6 ${integrations && "text-center"}`}>
+          <button className={`flex items-center space-x-2 dark:bg-gray-700 px-4 py-1.5 border border-gray-600 rounded-full text-foreground dark:text-primary text-sm ${integrations && "mx-auto"}`}>
             <span>🤔 Frequently Asked Questions</span>
           </button>
 
@@ -54,7 +59,11 @@ export default function FAQ() {
             About GTX
           </h2>
 
-          <h5 className="mx-auto text-gray-500 dark:text-gray-400">
+          <h5
+            className={`mx-auto text-gray-500 dark:text-gray-400 ${
+              integrations ? "hidden" : "md:block"
+            }`}
+          >
             Sign up for a free trial today and experience the difference. Our
             intuitive interface, powerful features, and dedicated support.
           </h5>

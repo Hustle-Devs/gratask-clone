@@ -3,6 +3,7 @@ import left from "@/assets/integrations/left.png";
 import right from "@/assets/integrations/right.png";
 import { Button } from "@/components/ui/button";
 import IntegrationsGrid from "@/components/integrations/IntegrationsGrid";
+import FAQ from "@/components/home/faq/Faq";
 
 export default function IntegrationsSection() {
   return (
@@ -47,7 +48,8 @@ export default function IntegrationsSection() {
           </div>
         </div>
       </section>
-      <IntegrationsGrid/>
+      <IntegrationsGrid />
+      <FAQ integrations={true} />
     </section>
   );
 }
