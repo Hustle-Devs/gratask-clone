@@ -29,7 +29,7 @@ export default function Navbar() {
           >
             All Pages <FaAngleDown />{" "}
           </Link>
-          <Link href={"/ntegrations"}>Integrations</Link>
+          <Link href={"/integrations"}>Integrations</Link>
           <Link href={"/pricing"}>Pricing</Link>
           <Link href={"/contact"}>Contact</Link>
         </nav>
