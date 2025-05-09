@@ -199,7 +199,7 @@ const Features = () => {
         {plans.map((plan, index) => (
           <h4
             key={plan.name}
-            className={`flex justify-center items-center mx-auto lg:px-[30px] lg:w-[306px] lg:h-[94px] text-[16px] lg:text-[20px]  ${
+            className={`flex dark:text-black lg:dark:text-white justify-center items-center mx-auto lg:px-[30px] lg:w-[306px] lg:h-[94px] text-[16px] lg:text-[20px]  ${
               plan.highlight
                 ? "lg:bg-[#19171E] lg:rounded-t-[16px] text-[#FA83FF]"
                 : "text-center"
@@ -239,8 +239,8 @@ const Features = () => {
                   : ""
               } ${
                 !feature.isCategory
-                  ? "border-black dark:border-white/1 border-b-[.5px]"
-                  : "border-black dark:border-white/7 border-b-[2px]"
+                  ? "lg:border-black lg:dark:border-white/1 lg:border-b-[.5px]"
+                  : "lg:border-black lg:dark:border-white/7 lg:border-b-[2px]"
               } lg:w-[306px] lg:h-[94px]`}
             >
               {!feature.isCategory && (
