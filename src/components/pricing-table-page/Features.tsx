@@ -217,7 +217,7 @@ const Features = () => {
           className="flex flex-row justify-between items-center gap-[10px] lg:gap-0 lg:bg-transparent mx-auto px-[5px] lg:px-0 py-[5px] lg:py-0 border-white/7 border-b-1 w-[370px] md:w-[768px] lg:w-[1224px] bg-accent-50"
         >
           <h5
-            className={`flex text-white justify-start lg:justify-start lg:items-center  lg:bg-[#19171E] mx-auto  ${
+            className={`flex text-black lg:text-white justify-start lg:justify-start lg:items-center  lg:bg-[#19171E] mx-auto  ${
               rowIndex > 0 ? "ml-[0px]" : "ml-0"
             }  lg:ml-0 lg:px-[30px] w-[70px] lg:w-[306px] lg:h-[94px] text-[10px] lg:text-[18px] ${
               feature.isCategory
@@ -239,8 +239,8 @@ const Features = () => {
                   : ""
               } ${
                 !feature.isCategory
-                  ? "border-white/2 border-b-[.5px]"
-                  : "border-white/7 border-b-1"
+                  ? "border-black dark:border-white/1 border-b-[.5px]"
+                  : "border-black dark:border-white/7 border-b-[2px]"
               } lg:w-[306px] lg:h-[94px]`}
             >
               {!feature.isCategory && (
