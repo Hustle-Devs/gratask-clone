@@ -8,7 +8,7 @@ import successImg from "@/assets/task-management/success.png";
 
 export default function TaskManagementFirst() {
   return (
-    <section className="bg-foreground dark:bg-gray-700 mx-auto p-16 rounded-3xl w-full max-w-custom text-white dark:text-primary">
+    <section className="mx-auto p-16 rounded-3xl w-full max-w-custom text-white dark:text-primary">
       <div className="flex md:flex-row flex-col items-center md:items-start gap-12">
         {/* Left Side: Image */}
         <div className="flex justify-center w-full md:w-1/2">
