@@ -189,10 +189,10 @@ const Features = () => {
   ];
 
   return (
-    <div className="flex flex-col justify-start items-center mx-auto mt-[50px] lg:mt-[120px] lg:mb-[-180px] py-[10px] lg:py-0 border-1 border-black lg:border-none w-[380px] md:w-[768px] lg:w-[1224px]">
+    <div className="flex flex-col justify-start items-center mx-auto mt-[50px] lg:mt-[120px] py-[5px] lg:py-0 border-1 border-white lg:border-none w-[380px] md:w-[768px] lg:w-[1224px]">
       {/* Header Row */}
       <div className="flex flex-row justify-between items-center gap-[10px] lg:gap-0 lg:bg-transparent mx-auto px-[5px] lg:px-0 py-[10px] lg:py-0 border-1 border-white/7 border-b-1 border-b-black lg:border-none w-[370px] md:w-[768px] lg:w-[1224px] bg-accent-50">
-        <h3 className="flex justify-center lg:justify-start items-center lg:w-[306px] lg:h-[94px] text-[16px] lg:text-[40px]">
+        <h3 className="flex justify-center lg:justify-start items-center lg:w-[306px] lg:h-[94px] text-[16px] lg:dark:text-white lg:text-[40px] dark:text-black">
           Features
         </h3>
 
